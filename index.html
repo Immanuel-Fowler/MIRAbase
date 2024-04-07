@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="/pages/Login/login.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div>
+        <form class = "form" action="#" method="post">
+            <div>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        swal({
+            title: "Welcome To MIRAcare",
+            text: "We are the #1 A.I Health Management System",
+            icon: "info",
+            buttons: true
+        });
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCETCsD74uC_UVWZc0KVNQkEY6O2_YQS84",
+            authDomain: "mira-database-83267.firebaseapp.com",
+            projectId: "mira-database-83267",
+            storageBucket: "mira-database-83267.appspot.com",
+            messagingSenderId: "659899654615",
+            appId: "1:659899654615:web:2ff316b4be3952d5c2ab92",
+            measurementId: "G-T3KN6CJJD1"
+        };
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true }); 
+
+    </script>
+    <script src="/pages/Login/login.js"></script>
+</body>
+</html>

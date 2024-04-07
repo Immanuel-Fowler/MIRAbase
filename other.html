@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <nav>
+          <a href=""><i class="fas fa-home"></i></a>
+          <a href=""><i class="fas fa-briefcase"></i></a>
+          <a href=""><i class="far fa-file"></i></a>
+          <a href=""><i class="far fa-address-card"></i></a>
+        </nav>
+    </head>
+
+    <body>
+        <img src ="assets/logo.png">
+
+        <div class="content">
+
+          <table id="patient-table">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Sex</th>
+                <th>Race</th>
+                <th>Weight</th>
+                <th>Height</th>
+                <th>Zip Code</th>
+                <th>Known Illnessnes</th>
+                <th>Drug Abuse</th>
+                <th>Diet</th>
+                <th>Supplements</th>
+                <th>Current Medication</th>
+                <th>Past Medication</th>
+                <th>Family History</th>
+              </tr>
+            </thead>
+            <tbody>
+  
+            </tbody>
+          </table>
+
+        </div>
+
+        
+
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCETCsD74uC_UVWZc0KVNQkEY6O2_YQS84",
+                authDomain: "mira-database-83267.firebaseapp.com",
+                projectId: "mira-database-83267",
+                storageBucket: "mira-database-83267.appspot.com",
+                messagingSenderId: "659899654615",
+                appId: "1:659899654615:web:2ff316b4be3952d5c2ab92",
+                measurementId: "G-T3KN6CJJD1"
+            };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+body{
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 1%;
+}
+
+h1{
+    color: #009879;
+    font-size: 64px;
+    letter-spacing: 1.5px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.content{
+    background: #e2e2e2;
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 1%;
+    padding:  20px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    overflow-x: auto; /* Add horizontal scroll if content overflows */
+}
+
+.content table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.4em;
+    font-family: sans-serif;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content thead tr{
+    background-color:  #5D8258;
+    color: #ffffff;
+    text-align: left;
+}
+
+.content th,
+.content td {
+    padding: 12px 15px;
+}
+
+.content tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content tbody tr:last-of-type {
+    background-image: linear-gradient(to right, #9dc183, #74c365); /* Gradient background */
+    background-position: bottom; /* Position the gradient at the bottom */
+    background-size: 100% 2px; /* Gradient size */
+    background-repeat: no-repeat; /* No repeating */
+}
+
+nav a {
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    background-image: linear-gradient(#99BD94, #5D8258);
+    box-shadow:  15px 0px 20px rgba(0, 0, 0, 0.407);
+}
+    
+.sidebar{
+    background-color: rgb(255, 255, 255);
+    width: 2.5%;
+    list-style-type: none; 
+}
+
+.sidebar li{
+    display:inline-block;
+    text-align: left;
+}
+
+
+
+
